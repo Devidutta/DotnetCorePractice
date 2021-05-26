@@ -15,10 +15,10 @@ namespace DemoApp.Controllers
         {
             employeeList = employeeRepository;
         }
-        public JsonResult Index()
+        public ObjectResult Index()
         {
             Employee employee= employeeList.GetEmployee(1);
-            return Json(employee);
+            return new ObjectResult(employee);
         }
     }
 }
