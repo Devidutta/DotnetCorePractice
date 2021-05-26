@@ -15,10 +15,10 @@ namespace DemoApp.Controllers
         {
             employeeList = employeeRepository;
         }
-        public ObjectResult Index()
+        public ViewResult Index()
         {
             Employee employee= employeeList.GetEmployee(1);
-            return new ObjectResult(employee);
+            return View(employee);
         }
     }
 }

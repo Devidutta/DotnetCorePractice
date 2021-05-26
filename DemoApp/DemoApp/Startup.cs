@@ -19,7 +19,7 @@ namespace DemoApp
         {
             //AddMvc method internally calls the AddMvcCore method.AddMvcCore method consists of ONLY the core methods of MVC.
             //services.AddMvcCore();
-            services.AddMvc().AddXmlSerializerFormatters();
+            services.AddMvc();
             services.AddSingleton<IEmployeeRepository, MockEmployeeRepository>();
         }
 
