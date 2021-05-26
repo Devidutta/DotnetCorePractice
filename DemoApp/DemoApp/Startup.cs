@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using DemoApp.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -19,6 +20,7 @@ namespace DemoApp
             //AddMvc method internally calls the AddMvcCore method.AddMvcCore method consists of ONLY the core methods of MVC.
             //services.AddMvcCore();
             services.AddMvc();
+            services.AddSingleton<IEmployeeRepository, MockEmployeeRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
