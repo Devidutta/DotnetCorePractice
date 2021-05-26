@@ -5,3 +5,6 @@
 /.vs
 /DemoApp/.vs/DemoApp/v16
 /DemoApp/DemoApp/obj
+/DemoApp/.vs/DemoApp
+/DemoApp/DemoApp/bin/Debug/netcoreapp2.1
+*.user
