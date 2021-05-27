@@ -26,5 +26,12 @@ namespace DemoApp.Controllers
             };
             return View(homeIndexViewModel);
         }
+
+        public ViewResult Details()
+        {
+            var model= employeeList.GetAllEmployees();
+            return View(model);
+
+        }
     }
 }
