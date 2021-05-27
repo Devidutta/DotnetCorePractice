@@ -11,21 +11,16 @@
     <title>Index</title>
 </head>
 <body>
-    <h3>@ViewData["PageTitle"]</h3>
-
-    @{
-
-        var employee = ViewData["EmployeeDetails"] as DemoApp.Models.Employee;
-    }
+    <h3>@ViewBag.PageTitle</h3>
 
     <div>
-        Name:@employee.Name;
+        Name:@ViewBag.EmployeeDetails.Name
     </div>
     <div>
-        Email:@employee.Email;
+        Email:@ViewBag.EmployeeDetails.Email
     </div>
     <div>
-        Department:@employee.Department;
+        Department:@ViewBag.EmployeeDetails.Department
     </div>
 </body>
 </html>
