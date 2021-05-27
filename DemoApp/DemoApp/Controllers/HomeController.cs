@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using DemoApp.Models;
+using DemoApp.ViewModel;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DemoApp.Controllers
@@ -17,9 +18,13 @@ namespace DemoApp.Controllers
         }
         public ViewResult Index()
         {
-            Employee employee= employeeList.GetEmployee(1);
-            ViewBag.PageTitle = "Index";
-            return View(employee);
+            HomeIndexViewModel homeIndexViewModel = new HomeIndexViewModel()
+            {
+                Employee = employeeList.GetEmployee(1),
+                PageTitle = "Index"
+
+            };
+            return View(homeIndexViewModel);
         }
     }
 }
