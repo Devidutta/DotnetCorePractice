@@ -11,6 +11,21 @@
     <title>Index</title>
 </head>
 <body>
-    <h1>Index.cshtml</h1>
+    <h3>@ViewData["PageTitle"]</h3>
+
+    @{
+
+        var employee = ViewData["EmployeeDetails"] as DemoApp.Models.Employee;
+    }
+
+    <div>
+        Name:@employee.Name;
+    </div>
+    <div>
+        Email:@employee.Email;
+    </div>
+    <div>
+        Department:@employee.Department;
+    </div>
 </body>
 </html>
