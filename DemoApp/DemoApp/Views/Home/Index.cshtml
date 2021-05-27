@@ -1,4 +1,5 @@
-﻿
+﻿@model DemoApp.Models.Employee;
+
 @{
     Layout = null;
 }
@@ -14,13 +15,13 @@
     <h3>@ViewBag.PageTitle</h3>
 
     <div>
-        Name:@ViewBag.EmployeeDetails.Name
+        Name:@Model.Name
     </div>
     <div>
-        Email:@ViewBag.EmployeeDetails.Email
+        Email:@Model.Email
     </div>
     <div>
-        Department:@ViewBag.EmployeeDetails.Department
+        Department:@Model.Department
     </div>
 </body>
 </html>

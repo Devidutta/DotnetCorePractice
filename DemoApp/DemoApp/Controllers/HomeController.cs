@@ -18,7 +18,6 @@ namespace DemoApp.Controllers
         public ViewResult Index()
         {
             Employee employee= employeeList.GetEmployee(1);
-            ViewBag.EmployeeDetails = employee;
             ViewBag.PageTitle = "Index";
             return View(employee);
         }
