@@ -17,9 +17,6 @@ namespace DemoApp.Controllers
             employeeList = employeeRepository;
         }
 
-        [Route("")]
-        [Route("controller")]
-        [Route("controller/action")]
         public ViewResult Index()
         {
             HomeIndexViewModel homeIndexViewModel = new HomeIndexViewModel()
