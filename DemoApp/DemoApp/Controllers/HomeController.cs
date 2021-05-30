@@ -18,8 +18,8 @@ namespace DemoApp.Controllers
         }
 
         [Route("")]
-        [Route("Home")]
-        [Route("Home/Index")]
+        [Route("controller")]
+        [Route("controller/action")]
         public ViewResult Index()
         {
             HomeIndexViewModel homeIndexViewModel = new HomeIndexViewModel()
