@@ -10,6 +10,9 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace DemoApp
 {
+    /// <summary>
+    /// This is the Startup Method.
+    /// </summary>
     public class Startup
     {
         // This method gets called by the runtime. Use this method to add services to the container.

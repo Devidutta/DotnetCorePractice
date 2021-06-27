@@ -12,6 +12,10 @@ namespace DemoApp
 {
     public class Program
     {
+        /// <summary>
+        /// This is the main method.
+        /// </summary>
+        /// <param name="args"></param>
         public static void Main(string[] args)
         {
             CreateWebHostBuilder(args).Build().Run();
