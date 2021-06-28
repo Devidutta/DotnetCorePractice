@@ -20,7 +20,11 @@ namespace DemoApp
         {
             CreateWebHostBuilder(args).Build().Run();
         }
-
+        /// <summary>
+        /// this is the main method.
+        /// </summary>
+        /// <param name="args"></param>
+        /// <returns></returns>
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>();
